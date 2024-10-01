@@ -1,0 +1,90 @@
+:root{
+  --White: #fff;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  padding: 0.8rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+.inputs{
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: #2E2D4E;
+  padding: 1.2rem;
+
+
+  & button{
+    border-radius: 30px;
+    height: 40px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #8B8AE1;
+    transition: 0.1s;
+  }
+
+  & button:hover{
+    opacity: 0.8;
+    color: var(--White);
+  }
+
+  & input{
+    height: 40px;
+    border: 1px solid #4E456C;
+    border-radius: 30px;
+    background-color: #363653;
+    color: var(--White);
+    padding-left: 10px;
+    outline: none;
+  }
+}
+
+.users{
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  background-color: #2E2D4E;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+
+
+  & p {
+    color: var(--White);
+    font-weight: bold;
+
+    & span{
+      font-weight: normal;
+    }
+  }
+
+  & button{
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+  }
+
+  & button:hover{
+    opacity: 0.8;
+  }
+}
+
+.removeUser {
+  display: flex;
+  justify-content: flex-end; /* Alinha a lixeira à direita */
+  margin-top: auto; /* Empurra a lixeira para o final da div */
+}
+
+h1{
+  font-size: 28px;
+  color: var(--White);
+  text-align: center;
+}
